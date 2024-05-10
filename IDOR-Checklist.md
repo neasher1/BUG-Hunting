@@ -20,10 +20,46 @@
 - Applying discounts or coupons intended for specific users by manipulating user IDs or coupon codes
 - Viewing other users saved payment methods or addresses via ID manipulation
 
+    ### Product Management:
+    - Adding/removing products to/from the shopping cart by manipulating product IDs or quantities in requests
+    - Changing product details (such as name, description, price) via direct object references in URLs or request parameters
+    - Accessing unpublished or hidden products by guessing or manipulating product IDs in URLs
 
-## Feedback and Reviews:
-- Modifying or deleting reviews or feedback submitted by other users via direct object references in request parameters or URLs
-- Submitting reviews or feedback on behalf of other users by manipulating user IDs or session tokens
+    ### Order Management:
+    - Viewing/modifying order details (items, shipping address, payment method) by changing order IDs in URLs or request parameters
+    - Cancelling or refunding orders placed by other users by manipulating order IDs or user IDs
+    - Accessing order history or invoices of other users by guessing or manipulating user IDs in URLs
+
+    ### Payment Processing:
+    - Making purchases with stolen credit card information by manipulating payment token IDs or transaction IDs
+    - Accessing payment confirmation pages or receipts of other users by changing order IDs or user IDs in URLs
+    - Modifying payment amounts or currency conversion rates in payment requests via ID manipulation
+
+    ### Discounts and Coupons:
+    - Applying discounts or coupons intended for specific users by manipulating user IDs or coupon codes
+    - Bypassing coupon code validation checks to redeem expired or one-time-use coupons by manipulating coupon IDs or codes
+    - Accessing discount codes or promotional offers of other users by guessing or manipulating user IDs in URLs
+
+    ### Shipping and Delivery:
+    - Viewing/modifying shipping details (carrier, tracking number, delivery address) by changing order IDs in URLs or request parameters
+    - Redirecting shipments to different addresses or intercepting deliveries by manipulating order IDs or shipping IDs
+    - Accessing shipping labels or delivery status of other users by guessing or manipulating user IDs in URLs
+
+    ### Customer Support:
+    - Accessing customer support tickets or inquiries submitted by other users by guessing or manipulating ticket IDs or user IDs
+    - Modifying or deleting customer support tickets or messages via direct object references in request parameters or URLs
+    - Responding to customer support inquiries on behalf of other users by manipulating user IDs or session tokens
+
+    ### Product Reviews and Ratings:
+    - Modifying or deleting product reviews or ratings submitted by other users via direct object references in request parameters or URLs
+    - Submitting reviews or ratings on behalf of other users by manipulating user IDs or session tokens
+    - Accessing product review analytics or insights of other users by guessing or manipulating user IDs in URLs
+
+    ### Wishlist and Favorites:
+    - Accessing or modifying items in other users wishlists or favorites lists by changing user IDs or session tokens in URLs or request parameters
+    - Adding or removing items from other users wishlists or favorites lists via ID manipulation
+    
+
 
 
 ## Messaging/Chat Systems:
