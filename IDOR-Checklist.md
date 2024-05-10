@@ -87,19 +87,5 @@
 ## Third-party Integrations:
 - Accessing or modifying data from integrated services (social media, payment gateways) by manipulating IDs or tokens passed in API requests
 
-
-
-
-## bypassing method
------------------
-GET /api_v1/messages?user_id=YOUR_USER_ID&user_id=ANOTHER_USERS_ID
-GET /api_v1/messages?user_id=ANOTHER_USERS_ID&user_id=YOUR_USER_ID
-GET /api_v1/messages?user_ids[]=YOUR_USER_ID&user_ids[]=ANOTHER_USERS_ID
-
-## Change the request method
-----------------------
-try instead: GET, POST, PUT, DELETE, PATCH
-
-## Change the requested file type
--------------
-try adding .json
+----------------------------------------------------------------    
+----------------------------------------------------------------
