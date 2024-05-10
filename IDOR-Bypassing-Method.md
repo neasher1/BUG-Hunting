@@ -2,17 +2,15 @@
 
 ## Bypassing method
 -----------------
+```
 GET /api_v1/messages?user_id=YOUR_USER_ID&user_id=ANOTHER_USERS_ID
 GET /api_v1/messages?user_id=ANOTHER_USERS_ID&user_id=YOUR_USER_ID
 GET /api_v1/messages?user_ids[]=YOUR_USER_ID&user_ids[]=ANOTHER_USERS_ID
+```
 
 ## Change the request method
 ----------------------
-try instead: GET, POST, PUT, DELETE, PATCH
-
-## Change the requested file type
--------------
-try adding .json
+- try instead: GET, POST, PUT, DELETE, PATCH
 
 
 1. Add parameters onto the endpoints for example, if there was
