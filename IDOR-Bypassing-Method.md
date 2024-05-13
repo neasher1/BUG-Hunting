@@ -207,7 +207,6 @@ Host: example.com
 Content-type: application/json
 ```
 
-
 15. Send wildcard instead of ID
 ```
 GET /api/users/111 HTTP/1.1
