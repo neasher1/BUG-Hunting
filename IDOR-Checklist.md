@@ -8,7 +8,8 @@
     ### Reset Password
     - reseting password change with victim userId 
     - Full account takeover of any user through reset password: {"email":["victim@gmail.com","your@gmail.com"]} [https://hackerone.com/reports/1175081]
-    - Password reset token leakage via referer [https://hackerone.com/reports/342693] [https://hackerone.com/reports/272379]
+    - Password reset token leakage via Referer Header [https://hackerone.com/reports/342693] [https://hackerone.com/reports/272379]
+    - Password Reset link hijacking via Host Header Poisoning [https://hackerone.com/reports/226659] [https://www.skeletonscribe.net/2013/05/practical-http-host-header-attacks.html]   [https://medium.com/@tameemkhalid/host-header-injection-on-password-reset-functionality-an-easy-p2-5c6263c2e3d4]
 - Viewing/ordering other users past purchases or orders by changing the order ID or user ID in URL parameters
 
 
