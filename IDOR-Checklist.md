@@ -5,8 +5,10 @@
 - Editing/deleting user comments/posts/feedback via ID
 - Changing profile information (name, email, etc.) with victim userID
 - Viewing/editing other users private data (addresses, phone numbers) with userID manipulation
-- reseting password/password change with victim userId 
-- Full account takeover of any user through reset password: {"email":["victim@gmail.com","your@gmail.com"]} [https://hackerone.com/reports/1175081]
+    ### Reset Password
+    - reseting password change with victim userId 
+    - Full account takeover of any user through reset password: {"email":["victim@gmail.com","your@gmail.com"]} [https://hackerone.com/reports/1175081]
+    - Password reset token leakage via referer [https://hackerone.com/reports/342693] [https://hackerone.com/reports/272379]
 - Viewing/ordering other users past purchases or orders by changing the order ID or user ID in URL parameters
 
 
