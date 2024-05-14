@@ -6,7 +6,10 @@
 - Changing profile information (name, email, etc.) with victim userID
 - Viewing/editing other users private data (addresses, phone numbers) with userID manipulation
     
-    ### Reset Password [https://infosecwriteups.com/all-about-password-reset-vulnerabilities-3bba86ffedc7]
+    ### Reset Password 
+    [https://infosecwriteups.com/all-about-password-reset-vulnerabilities-3bba86ffedc7]
+    
+    [https://anugrahsr.github.io/posts/10-Password-reset-flaws/#10-try-using-your-token]
 
     - reseting password change with victim userId 
 
@@ -17,7 +20,7 @@
         Double parameter: email=victim@xyz.tld&email=hacker@xyz.tld
 
         carbon copy: email=victim@xyz.tld%0a%0dcc:hacker@xyz.tld
-        
+
         Using separators: email=victim@xyz.tld,hacker@xyz.tld
                         email=victim@xyz.tld%20hacker@xyz.tld
                         email=victim@xyz.tld|hacker@xyz.tld
@@ -55,6 +58,10 @@
     - Design Flaw in session management of password reset [https://hackerone.com/reports/229417]
 
     - weak cryptography issue [https://infosecwriteups.com/bugbounty-how-i-was-able-to-compromise-any-user-account-via-reset-password-functionality-a11bb5f863b3]
+
+    - Response Manipulation: Replace Bad Response With Good One [https://medium.com/@innocenthacker/how-i-found-the-most-critical-bug-in-live-bug-bounty-event-7a88b3aa97b3]
+
+    -Failure to Invalid Session after Password Change [https://hackerone.com/reports/514577] [https://hackerone.com/reports/678050]
 
 
 - Viewing/ordering other users past purchases or orders by changing the order ID or user ID in URL parameters
