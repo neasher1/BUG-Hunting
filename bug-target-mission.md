@@ -2,11 +2,12 @@
 - Web
 
 ## REPORTS - 
-	- [https://github.com/reddelexc/hackerone-reports] 
-	- [https://github.com/KathanP19/HowToHunt]
+	- https://github.com/reddelexc/hackerone-reports
+	- https://github.com/KathanP19/HowToHunt
 
 ## Checklist
-- IDOR
+
+### IDOR
 	- IDOR in semrush academy [https://hackerone.com/reports/783708]
 	
 	- No error thrown when IDOR attempted while editing address[https://hackerone.com/reports/1085743]
@@ -31,24 +32,29 @@
 	
 	- IDOR on upload profile functionality [https://hackerone.com/reports/741683]
 	
-- RESET PASS [check IDOR-Checklist.md]
+### RESET PASS [check IDOR-Checklist.md]
 
-- 2FA BYPASS, EMAIL BYPASS [https://github.com/KathanP19/HowToHunt/blob/master/Authentication_Bypass/2FA_Bypasses.md] [https://github.com/reddelexc/hackerone-reports/blob/master/tops_by_bug_type/TOPMFA.md]
+### 2FA BYPASS, EMAIL BYPASS -
+	- [https://github.com/KathanP19/HowToHunt/blob/master/Authentication_Bypass/2FA_Bypasses.md]
+	- [https://github.com/reddelexc/hackerone-reports/blob/master/tops_by_bug_type/TOPMFA.md]
+	
 	- 2FA bypass by sending blank code [https://hackerone.com/reports/897385]
 	
-	- Enable 2FA without verifying the email [https://hackerone.com/reports/649533]
+	- Enable 2FA without verifying the email [https://hackerone.com/reports/649533] [https://hackerone.com/reports/699200]
 	
 	- Password not checked when disabling 2FA [https://hackerone.com/reports/587910] 
 	
 	- Attacker has the email and password, the attacker can login in the account without the need of the 2fa code [https://hackerone.com/reports/665722]
 	
-	- Session Doesn't expire after 2fa and also other session can change passsword [https://hackerone.com/reports/2234736]
+	- Session Doesn't expire after 2fa and also other session can change passsword [https://hackerone.com/reports/2234736] [https://hackerone.com/reports/486693]
 	
 	- Able to blocking users with 2fa from login into their accounts by just knowing the SteamID [https://hackerone.com/reports/1179232]
 	
-	- 
+	- Bypass two-factor authentication bruteforce [https://hackerone.com/reports/121696]
+	
 
-- Violation of secure design principle
+
+### Violation of secure design principle
 	- Login page password-guessing attack [https://hackerone.com/reports/96115]
 	
 	- Account creation with invalid email addresses email is accepting % and %0d%0a [https://hackerone.com/reports/815085]
@@ -65,11 +71,11 @@
 	
 	- Change payment method doesn't sent to the user email [https://hackerone.com/reports/240083]
 	
-- Disclosure of Secrets
-- Improper Access Control
-- Business Logic Errors
--* Account Takeover
--* Authentication Bypass
+### Disclosure of Secrets
+### Improper Access Control
+### Business Logic Errors
+### * Account Takeover
+### * Authentication Bypass
 			
 ## Sensitive Data Exposure
 - Disclosure of Secrets 
