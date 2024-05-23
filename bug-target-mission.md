@@ -1,9 +1,9 @@
 # bugHunt
 - Web
 
-## REPORTS - 
-	- https://github.com/reddelexc/hackerone-reports
-	- https://github.com/KathanP19/HowToHunt
+## REPORTS
+	https://github.com/reddelexc/hackerone-reports
+	https://github.com/KathanP19/HowToHunt
 
 ## Checklist
 
