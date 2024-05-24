@@ -2,8 +2,8 @@
 - Web
 
 ## REPORTS
-https://github.com/reddelexc/hackerone-reports
-https://github.com/KathanP19/HowToHunt
+- https://github.com/reddelexc/hackerone-reports
+- https://github.com/KathanP19/HowToHunt
 
 ## Checklist
 
@@ -31,10 +31,15 @@ https://github.com/KathanP19/HowToHunt
 - IDOR expire other user sessions [https://hackerone.com/reports/56511]
 
 - IDOR on upload profile functionality [https://hackerone.com/reports/741683]
+-------------------------------------------------
+-------------------------------------------------
 
 ### RESET PASS [check IDOR-Checklist.md]
 
-### 2FA BYPASS, EMAIL BYPASS -
+-------------------------------------------------
+-------------------------------------------------
+
+### 2FA BYPASS
 - [https://github.com/KathanP19/HowToHunt/blob/master/Authentication_Bypass/2FA_Bypasses.md]
 - [https://github.com/reddelexc/hackerone-reports/blob/master/tops_by_bug_type/TOPMFA.md]
 
@@ -52,7 +57,8 @@ https://github.com/KathanP19/HowToHunt
 
 - Bypass two-factor authentication bruteforce [https://hackerone.com/reports/121696]
 
-
+-------------------------------------------------
+-------------------------------------------------
 
 ### Violation of secure design principle
 - Login page password-guessing attack [https://hackerone.com/reports/96115]
@@ -71,11 +77,26 @@ https://github.com/KathanP19/HowToHunt
 
 - Change payment method doesn't sent to the user email [https://hackerone.com/reports/240083]
 
+
+-------------------------------------------------
+-------------------------------------------------
+
+### Authorization Bypass
+- Email Confirmation Bypass after signup [https://hackerone.com/reports/791775]
+
+- Email Confirmation Bypass [https://hackerone.com/reports/910300]
+
+- bypass partner email confirmation [https://hackerone.com/reports/300305]
+
+- 
+
+-------------------------------------------------
+-------------------------------------------------
 ### Disclosure of Secrets
 ### Improper Access Control
 ### Business Logic Errors
-### * Account Takeover
-### * Authentication Bypass
+### *Account Takeover
+### *Authentication Bypass
 
 ## Sensitive Data Exposure
 - Disclosure of Secrets 
