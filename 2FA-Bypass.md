@@ -50,3 +50,25 @@ See [here](http://c0d3g33k.blogspot.com/2018/02/how-i-bypassed-2-factor-authenti
 
 Reference:
 - https://youtu.be/X2WfhBYQ2fY
+
+
+# 2FA BYPASS
+- [https://github.com/KathanP19/HowToHunt/blob/master/Authentication_Bypass/2FA_Bypasses.md]
+- [https://github.com/reddelexc/hackerone-reports/blob/master/tops_by_bug_type/TOPMFA.md]
+
+- 2FA bypass by sending blank code [https://hackerone.com/reports/897385]
+
+- Enable 2FA without verifying the email [https://hackerone.com/reports/649533] [https://hackerone.com/reports/699200]
+
+- Password not checked when disabling 2FA [https://hackerone.com/reports/587910] 
+
+- Attacker has the email and password, the attacker can login in the account without the need of the 2fa code [https://hackerone.com/reports/665722]
+
+- Session Doesn't expire after 2fa and also other session can change passsword [https://hackerone.com/reports/2234736] [https://hackerone.com/reports/486693]
+
+- Able to blocking users with 2fa from login into their accounts by just knowing the SteamID [https://hackerone.com/reports/1179232]
+
+- Bypass two-factor authentication bruteforce [https://hackerone.com/reports/121696]
+
+-------------------------------------------------
+-------------------------------------------------
