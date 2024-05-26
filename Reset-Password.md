@@ -1,11 +1,11 @@
 ### Reset Password 
-    All About Password Reset Vulnerability (https://infosecwriteups.com/all-about-password-reset-vulnerabilities-3bba86ffedc7)
+[All About Password Reset Vulnerability] (https://infosecwriteups.com/all-about-password-reset-vulnerabilities-3bba86ffedc7)
     
-    (https://anugrahsr.github.io/posts/10-Password-reset-flaws/#10-try-using-your-token)
+(https://anugrahsr.github.io/posts/10-Password-reset-flaws/#10-try-using-your-token)
 
-    - reseting password change with victim userId 
+- reseting password change with victim userId 
 
-    - Password reset with manipulating email parameter: [https://hackerone.com/reports/1175081]
+- Password reset with manipulating email parameter: [https://hackerone.com/reports/1175081]
     ```
         JSON: {"email":["victim@gmail.com","your@gmail.com"]} 
 
@@ -20,7 +20,7 @@
     ```
     
 
-    - Password reset token leakage via Referer Header [https://hackerone.com/reports/342693] [https://hackerone.com/reports/272379]
+    - Password reset token leakage via Referer Header [272379] (https://hackerone.com/reports/342693) [272379](https://hackerone.com/reports/272379)
 
     - Password Reset link hijacking via Host Header Poisoning [https://hackerone.com/reports/226659] [https://www.skeletonscribe.net/2013/05/practical-http-host-header-attacks.html]   [https://medium.com/@tameemkhalid/host-header-injection-on-password-reset-functionality-an-easy-p2-5c6263c2e3d4]
 
